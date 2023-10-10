@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example of consuming Stable Diffusion, using a Node Js application</title>
+</head>
+
+<body>
+    <h1>Generate illustrations</h1>
+    <form id="apiForm">
+        <label for="description">Description:</label>
+        <input type="description" id="description" name="description" required>
+        <input type="number" id="numberOfPics" name="Number Of Pics" min="1" max="4" required>
+        <button type="submit">Generate</button>
+        <h1>List of Illustrations</h1>
+        <ul id="imageList"></ul>
+    </form>
+    <script src="main.js"></script>
+</body>
+
+</html>
